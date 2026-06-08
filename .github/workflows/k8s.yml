@@ -1,0 +1,39 @@
+name: K8s Platform CI/CD
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    name: Build + Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Train model
+        run: python src/api/train.py
+      - name: Run tests
+        run: pytest tests/ -v --cov=src --cov-report=xml
+      - name: Validate K8s manifests
+        run: |
+          pip install pyyaml
+          python -c "
+          import yaml, glob
+          files = glob.glob('k8s/**/*.yaml', recursive=True)
+          for f in files:
+              yaml.safe_load_all(open(f).read())
+              print(f'Valid: {f}')
+          print(f'All {len(files)} manifests valid')
+          "
+      - name: Build Docker image
+        run: docker build -t mlops-k8s-platform:test .
