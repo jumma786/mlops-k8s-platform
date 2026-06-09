@@ -7,7 +7,7 @@
 ![Helm](https://img.shields.io/badge/Helm-chart-0F1689)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
-> **Part of the MLOps Portfolio Series** — Project 10 of 10  
+> **Part of the [MLOps Portfolio Series](https://github.com/jumma786/mlops-portfolio)** — Project 10 of 10  
 > Production Kubernetes platform for the XGBoost prediction API — K8s manifests, Helm chart, Prometheus metrics, HPA autoscaling, and liveness/readiness/startup probes.
 
 ---
