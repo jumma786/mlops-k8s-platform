@@ -96,18 +96,18 @@ make k8s-status
 
 ## 🔗 Complete MLOps Portfolio
 
-| # | Project | Key Tech | Status |
+| # | Project | Repo | Status |
 |---|---|---|---|
-| 1 | Multi-Model Tournament | MLflow, XGBoost, LightGBM | ✅ |
-| 2 | Scheduled Retraining | DVC, MLflow, Champion gate | ✅ |
-| 3 | Feature Engineering | Custom sklearn transformers | ✅ |
-| 4 | Hyperparameter Tuning | Optuna, MLflow, Bayesian search | ✅ |
-| 5 | Model Serving | FastAPI, Docker, Cloud Run | ✅ |
-| 6 | Feature Store | Parquet offline store, RFM | ✅ |
-| 7 | Model Monitoring | PSI, KS-test, Chi-squared | ✅ |
-| 8 | A/B Testing | Z-test, Cohen's h, FastAPI router | ✅ |
-| 9 | Airflow Pipeline | DAG, XCom, validation gate | ✅ |
-| **10** | **Kubernetes Platform** | **K8s, Helm, Prometheus, HPA** | ✅ **This repo** |
+| 1 | Multi-Model Tournament | [mlops-model-tournament](https://github.com/jumma786/mlops-model-tournament) | ✅ |
+| 2 | Scheduled Retraining | [mlops-retraining-pipeline](https://github.com/jumma786/mlops-retraining-pipeline) | ✅ |
+| 3 | Feature Engineering | [mlops-feature-pipeline](https://github.com/jumma786/mlops-feature-pipeline) | ✅ |
+| 4 | Hyperparameter Tuning | [mlops-hyperparameter-tuning](https://github.com/jumma786/mlops-hyperparameter-tuning) | ✅ |
+| 5 | Model Serving | [mlops-model-serving](https://github.com/jumma786/mlops-model-serving) | ✅ |
+| 6 | Feature Store | [mlops-feature-store](https://github.com/jumma786/mlops-feature-store) | ✅ |
+| 7 | Model Monitoring | [mlops-model-monitoring](https://github.com/jumma786/mlops-model-monitoring) | ✅ |
+| 8 | A/B Testing | [mlops-ab-testing](https://github.com/jumma786/mlops-ab-testing) | ✅ |
+| 9 | Airflow Pipeline | [mlops-airflow-pipeline](https://github.com/jumma786/mlops-airflow-pipeline) | ✅ |
+| **10** | **Kubernetes Platform** | [mlops-k8s-platform](https://github.com/jumma786/mlops-k8s-platform) | ✅ This repo |
 
 ---
 
